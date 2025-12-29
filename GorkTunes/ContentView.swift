@@ -7,55 +7,64 @@
 
 import SwiftUI
 import SwiftData
+import AVFAudio
+import Foundation
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
-
+    
+    @State private var isPlaying = false
+    @State private var musicTitle = "Monoco"
+    @State private var player: AVAudioPlayer?
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
+        ZStack{
+            Color.black.edgesIgnoringSafeArea(.all)
+            VStack(spacing: 20){
+                Text("Gork it").font(.title)
+                VStack(spacing: 20){
+                    Image(systemName: (isPlaying ? "pause.circle.fill" : "play.circle.fill"))
+                        .font(.largeTitle)
+                        .onTapGesture {
+                            isPlaying = true
+                            playMusic()
+                        }
                 }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-        } detail: {
-            Text("Select an item")
+            }.onAppear(perform: prepareMusic)
         }
     }
+    
 
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
+    private func prepareMusic(){
+        guard let musicFile = Bundle.main.url(forResource: musicTitle, withExtension: "mp3")
+        else{
+            print("Unknown Path")
+            return
+        }
+        do{
+            
+            try AVAudioSession.sharedInstance()
+                .setCategory(.playback,mode: .default,options: [.mixWithOthers])
+            try AVAudioSession.sharedInstance().setActive(true)
+            player = try AVAudioPlayer(
+                contentsOf: musicFile
+            )
+            player?.prepareToPlay()
+            print("ready to play")
+        }
+        catch {
+            print("error in player")
         }
     }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
-        }
+    private func playMusic(){
+        player?.play()
+        print(player?.isPlaying ?? false)
     }
 }
+//
+//  Player.swift
+//  GorkTunes
+//
+//  Created by Malachi McArthur on 12/29/25.
+//
 
-#Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
-}
+
+
