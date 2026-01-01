@@ -14,44 +14,54 @@ import MediaPlayer
 struct ContentView: View {
     
     @State private var isPlaying = false
-    @State private var musicTitle = "Monoco"
     @State private var player: AVAudioPlayer?
-    @State private var musicDirectoryURL: URL?
     @State private var showFileImporter = false
+    @State private var fileManager = FileManager.default
     var body: some View {
+        VStack(){
+            HStack{
+                Text("GorkTunes")
+                    .font(.title)
+                Spacer()
+                Image(systemName: "plus")
+                    .font(.largeTitle)
+                    .padding()
+                    .background(Color.blue)
+                    .clipShape(Circle())
+                    .onTapGesture {
+                        showFileImporter = true
+                    }
+                    .fileImporter(
+                        isPresented: $showFileImporter,
+                        allowedContentTypes: [.mp3],
+                        allowsMultipleSelection: true,
+                        onCompletion: {
+                            result in
+                            switch result {
+                            case .success(let urls):
+                                convertURLsToData(urls: urls)
+                            case .failure(let error):
+                                print("Failure to move file: \(error.localizedDescription)")
+                            }
+                        }
+                    )
+            }
+        }.padding(.top)
         ZStack{
             Color.black.edgesIgnoringSafeArea(.all)
             VStack(spacing: 20){
-                Text("Gork it").font(.title)
-                VStack(spacing: 20){
-                    Image(systemName: (isPlaying ? "pause.circle.fill" : "play.circle.fill"))
-                        .font(.largeTitle)
-                        .onTapGesture {
-                            isPlaying ? pauseMusic() : playMusic()
-                        }
-                }
-                VStack(spacing:30){
-                    Image(systemName: "plus")
-                        .font(.largeTitle)
-                        .onTapGesture {
-                            showFileImporter = true
-                        }
-                }
-            }.onAppear(perform: prepareMusic)
-        }.onAppear(perform: getMusicDirectory)
-            .fileImporter(
-                isPresented: $showFileImporter,
-                allowedContentTypes: [.mp3],
-                allowsMultipleSelection: true,
-                onCompletion: {
-                    result in
-                }
-            )
+                Image(systemName: (isPlaying ? "pause.circle.fill" : "play.circle.fill"))
+                    .font(.largeTitle)
+                    .onTapGesture {
+                        
+                    }
+            }
+        }
     }
     
     
     
-    private func prepareMusic(){
+    private func prepareMusic(musicTitle:String){
         guard let musicFile = Bundle.main.url(forResource: musicTitle, withExtension: "mp3")
         else{
             print("Unknown Path")
@@ -65,7 +75,7 @@ struct ContentView: View {
             player = try AVAudioPlayer(
                 contentsOf: musicFile
             )
-            player?.prepareToPlay()
+            playMusic()
             print("ready to play")
         }
         catch {
@@ -80,25 +90,37 @@ struct ContentView: View {
         player?.stop()
         isPlaying = false
     }
-    private func getMusicDirectory(){
+    private func convertURLsToData(urls:[URL]){
         do{
-            let fileManager = FileManager.default
-            guard let musicDirectory = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first
-            else{
-                print("No directory found")
-                return
-            }
-            musicDirectoryURL = musicDirectory.appendingPathComponent("GorkTunesMusic", isDirectory: true)
-            if !fileManager.fileExists(atPath: (musicDirectoryURL?.path())!){
-                try fileManager.createDirectory(at: musicDirectoryURL ?? URL.documentsDirectory, withIntermediateDirectories: true, attributes: nil)
-                print("file created at path \(musicDirectoryURL?.path() ?? "No Path")")
-            }else{
-                print("file exists at path \(musicDirectoryURL?.path() ?? "No Path")")
+            for url in urls{
+                guard url.startAccessingSecurityScopedResource() else{
+                    print("could not access")
+                    return
+                }
+                let mp3Data = try Data(contentsOf: url)
+                addMP3DataInDocuments(data: mp3Data, MP3Name: url.lastPathComponent)
+                url.stopAccessingSecurityScopedResource()
             }
         }
         catch{
-            print("error in getMusic: \(error.localizedDescription)")
+            print("failed to convert files: \(error.localizedDescription)")
+        }
+    }
+    private func listFiles(directoyURL:URL){
+        do{
+            let files = try fileManager.contentsOfDirectory(atPath: directoyURL.path())
+            print("Here are the files: \(files)")
+        } catch{
+            print("List files failed: \(error.localizedDescription)")
+        }
+    }
+    private func addMP3DataInDocuments(data:Data,MP3Name:String){
+        do{
+            try data.write(to: URL.documentsDirectory.appendingPathComponent(MP3Name), options: [.atomic])
+            print("success: \(listFiles(directoyURL: URL.documentsDirectory))")
+        }
+        catch{
+            print("Failed to write to documents: \(error.localizedDescription)")
         }
     }
 }
-
