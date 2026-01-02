@@ -12,7 +12,6 @@ import Foundation
 import MediaPlayer
 
 struct ContentView: View {
-    @State private var isPlaying = false
     @State private var player: AVAudioPlayer?
     @State private var showFileImporter = false
     @State private var fileManager = FileManager.default
@@ -44,7 +43,7 @@ struct ContentView: View {
                                 }
                             }
                         )
-                    Button(action:pauseMusic){//TODO: add functionality
+                    Button(action:{print("not implemented")}){//TODO: add functionality
                         Image(systemName: "minus")
                             .imageScale(.large)
                             .font(.largeTitle)
@@ -55,8 +54,17 @@ struct ContentView: View {
                         .controlSize(.extraLarge)
                 }
                 HStack{
-                    Image(systemName: (isPlaying ? "pause.circle.fill" : "play.circle.fill"))
-                        .font(.largeTitle)
+                    List{
+                        ForEach(createMusicObjects(), id: \.title) { music in
+                            Button(action: {prepareMusic(music: music)})
+                            {
+                                Image(systemName: (music.isPlaying ? "pause.circle.fill" : "play.circle.fill"))
+                                    .font(.largeTitle)
+                                Text(music.title).font(.largeTitle)
+                            }
+                            
+                        }
+                    }
                 }
                 Spacer()
             }
@@ -65,28 +73,28 @@ struct ContentView: View {
     
     
     
-    private func prepareMusic(musicURL:URL){
+    private func prepareMusic(music:Music){
         do{
             try AVAudioSession.sharedInstance()
                 .setCategory(.playback,mode: .default,options: [.mixWithOthers])
             try AVAudioSession.sharedInstance().setActive(true)
             player = try AVAudioPlayer(
-                contentsOf: musicURL
+                contentsOf: music.URL
             )
-            player?.prepareToPlay()
-            print("ready to play")
+            if !music.isPlaying {
+                music.setPlaying(isPlaying: true)
+                player?.play()
+                print("playing \(music.title)")
+            } else {
+                music.setPlaying(isPlaying: false)
+                player?.stop()
+                print("pausing \(music.title)")
+            }
+            
         }
         catch {
             print("error in player \(error.localizedDescription)")
         }
-    }
-    private func playMusic(){
-        player?.play()
-        isPlaying = true
-    }
-    private func pauseMusic(){
-        player?.stop()
-        isPlaying = false
     }
     private func convertURLsToData(urls:[URL]){
         do{
