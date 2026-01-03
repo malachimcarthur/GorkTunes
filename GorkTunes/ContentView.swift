@@ -15,13 +15,14 @@ struct ContentView: View {
     @State private var player: AVAudioPlayer?
     @State private var showFileImporter = false
     @State private var fileManager = FileManager.default
+    @State private var songPlaying: Music?
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading){
                 HStack{
                     Text("GorkTunes").font(.title)
                     Spacer()
-                    Button(action: revealFileImporter){
+                    Button(action: {showFileImporter = true}){
                         Image(systemName: "plus")
                             .font(.largeTitle)
                             .background(Color.blue)
@@ -56,11 +57,14 @@ struct ContentView: View {
                 HStack{
                     List{
                         ForEach(createMusicObjects(), id: \.title) { music in
-                            Button(action: {prepareMusic(music: music)})
+                            HStack
                             {
-                                Image(systemName: (music.isPlaying ? "pause.circle.fill" : "play.circle.fill"))
-                                    .font(.largeTitle)
-                                Text(music.title).font(.largeTitle)
+                                Button(action: {prepareMusic(music: music)})
+                                {
+                                    Image(systemName: (music.isPlaying ? "pause.circle.fill" : "play.circle.fill"))
+                                        .font(.title)
+                                    Text(music.title)
+                                }//.onLongPressGesture(perform: {print("long hold")})//TODO: add settings
                             }
                             
                         }
@@ -71,8 +75,6 @@ struct ContentView: View {
         }
     }
     
-    
-    
     private func prepareMusic(music:Music){
         do{
             try AVAudioSession.sharedInstance()
@@ -82,12 +84,14 @@ struct ContentView: View {
                 contentsOf: music.URL
             )
             if !music.isPlaying {
-                music.setPlaying(isPlaying: true)
+                stopPlayingMusic(lastPlayedSong: songPlaying ?? Music(URL: URL.documentsDirectory, title: "placeHolder"))
                 player?.play()
+                music.setPlaying(isPlaying: true)
                 print("playing \(music.title)")
+                songPlaying = music
             } else {
                 music.setPlaying(isPlaying: false)
-                player?.stop()
+                player?.pause()
                 print("pausing \(music.title)")
             }
             
@@ -138,7 +142,8 @@ struct ContentView: View {
         }
         return musicList
     }
-    private func revealFileImporter(){
-        showFileImporter = true
+    private func stopPlayingMusic(lastPlayedSong:Music){
+        lastPlayedSong.setPlaying(isPlaying: false)
+        print("Stopping \(lastPlayedSong.title)")
     }
 }
