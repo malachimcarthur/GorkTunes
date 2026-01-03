@@ -69,36 +69,104 @@ struct ContentView: View {
                             
                         }
                     }
-                }
+                }.onAppear(perform: {setUpAVAudio()})
                 Spacer()
             }
         }
     }
-    
-    private func prepareMusic(music:Music){
+    private func setUpAVAudio(){
         do{
             try AVAudioSession.sharedInstance()
-                .setCategory(.playback,mode: .default,options: [.mixWithOthers])
+                .setCategory(.playback,mode: .default,options: [])
             try AVAudioSession.sharedInstance().setActive(true)
+            remoteControlAudio()
+        }
+        catch{
+            print("Failed to create AVAudioSession \(error.localizedDescription)")
+        }
+    }
+    private func prepareMusic(music:Music){
+        do{
+            updatePlayingInfo(music: music)
             player = try AVAudioPlayer(
                 contentsOf: music.URL
             )
             if !music.isPlaying {
-                stopPlayingMusic(lastPlayedSong: songPlaying ?? Music(URL: URL.documentsDirectory, title: "placeHolder"))
-                player?.play()
-                music.setPlaying(isPlaying: true)
-                print("playing \(music.title)")
-                songPlaying = music
+                stopPlayingMusic(lastPlayedSong: songPlaying)
+                playMusic(music: music)
             } else {
-                music.setPlaying(isPlaying: false)
-                player?.pause()
-                print("pausing \(music.title)")
+                pauseMusic(music: music)
             }
-            
         }
         catch {
             print("error in player \(error.localizedDescription)")
         }
+    }
+    private func playMusic(music:Music){
+        player?.play()
+        music.setPlaying(isPlaying: true)
+        print("playing \(music.title)")
+        songPlaying = music
+    }
+    private func pauseMusic(music:Music){
+        player?.pause()
+        music.setPlaying(isPlaying: false)
+        print("pausing \(music.title)")
+    }
+    private func updatePlayingInfo(music:Music){
+        let nowPlayingInfo: [String: Any] = [
+            MPMediaItemPropertyTitle: music.title,
+            MPMediaItemPropertyArtist: music.artist ?? "Not Given"
+        ]
+        MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
+    }
+    private func remoteControlAudio(){
+        UIApplication.shared.beginReceivingRemoteControlEvents()
+        let remoteControledAudio = MPRemoteCommandCenter.shared()
+        remoteControledAudio.pauseCommand.isEnabled = true
+        remoteControledAudio.pauseCommand.addTarget {
+            event in
+            player?.pause()
+            return .success
+        }
+        remoteControledAudio.playCommand.isEnabled = true
+        remoteControledAudio.playCommand.addTarget{
+            event in
+            player?.play()
+            return .success
+        }
+        remoteControledAudio.previousTrackCommand.isEnabled = true
+        remoteControledAudio.previousTrackCommand.addTarget{
+            event in
+            print("success")
+            return .success
+        }
+        remoteControledAudio.nextTrackCommand.isEnabled = true
+        remoteControledAudio.nextTrackCommand.addTarget{
+                event in
+                print("success")
+                return .success
+            }
+
+        remoteControledAudio.changePlaybackPositionCommand.isEnabled = true
+        remoteControledAudio.changePlaybackPositionCommand.addTarget{
+                event in
+                print("success")
+                return .success
+            }
+
+        remoteControledAudio.seekForwardCommand.isEnabled = true
+        remoteControledAudio.seekForwardCommand.addTarget{
+                event in
+                print("success")
+                return .success
+            }
+        remoteControledAudio.seekBackwardCommand.isEnabled = true
+        remoteControledAudio.seekBackwardCommand.addTarget{
+                event in
+                print("success")
+                return .success
+            }
     }
     private func convertURLsToData(urls:[URL]){
         do{
@@ -142,8 +210,11 @@ struct ContentView: View {
         }
         return musicList
     }
-    private func stopPlayingMusic(lastPlayedSong:Music){
-        lastPlayedSong.setPlaying(isPlaying: false)
-        print("Stopping \(lastPlayedSong.title)")
+    private func stopPlayingMusic(lastPlayedSong:Music?){
+        if (lastPlayedSong == nil){
+            return
+        }
+        lastPlayedSong?.setPlaying(isPlaying: false)
+        print("Stopping \(lastPlayedSong?.title ?? "error")")
     }
 }
