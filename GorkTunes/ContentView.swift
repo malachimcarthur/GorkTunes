@@ -59,12 +59,13 @@ struct ContentView: View {
                         ForEach(createMusicObjects(), id: \.title) { music in
                             HStack
                             {
-                                Button(action: {prepareMusic(music: music)})
-                                {
+                                Button(
+                                    action: {Task {await prepareMusic(music: music)}},
+                                label: {
                                     Image(systemName: (music.isPlaying ? "pause.circle.fill" : "play.circle.fill"))
                                         .font(.title)
                                     Text(music.title)
-                                }//.onLongPressGesture(perform: {print("long hold")})//TODO: add settings
+                                })//.onLongPressGesture(perform: {print("long hold")})//TODO: add settings
                             }
                             
                         }
@@ -85,9 +86,9 @@ struct ContentView: View {
             print("Failed to create AVAudioSession \(error.localizedDescription)")
         }
     }
-    private func prepareMusic(music:Music){
+    private func prepareMusic(music:Music) async{
         do{
-            updatePlayingInfo(music: music)
+            await updatePlayingInfo(music: music)
             player = try AVAudioPlayer(
                 contentsOf: music.URL
             )
@@ -113,10 +114,13 @@ struct ContentView: View {
         music.setPlaying(isPlaying: false)
         print("pausing \(music.title)")
     }
-    private func updatePlayingInfo(music:Music){
-        let nowPlayingInfo: [String: Any] = [
+    private func updatePlayingInfo(music:Music) async{
+        let nowPlayingInfo: [String: Any] = await [
             MPMediaItemPropertyTitle: music.title,
-            MPMediaItemPropertyArtist: music.artist ?? "Not Given"
+            MPMediaItemPropertyArtist: music.getArtist() ?? "Not Given",
+            MPMediaItemPropertyPlaybackDuration: music.getPlayBackDuration(),
+            MPNowPlayingInfoPropertyPlaybackRate: player?.rate ?? 1.001,
+            MPNowPlayingInfoPropertyElapsedPlaybackTime: player?.currentTime ?? 0.0
         ]
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
     }

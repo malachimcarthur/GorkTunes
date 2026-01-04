@@ -11,20 +11,19 @@ final class Music{
     var URL: URL
     var title: String
     var isPlaying:Bool = false
-    var artist: String?
-    
+    var metadataAsset:AVURLAsset
     init(URL: URL, title: String) {
         self.URL = URL
         self.title = title
-        self.artist = "danny Devito"
+        self.metadataAsset = AVURLAsset(url: self.URL)
     }
     func setPlaying(isPlaying:Bool) {
         self.isPlaying = isPlaying
     }
     func getArtist() async-> String?{
         do{
-            let file = AVURLAsset(url: self.URL)
-            let metaDataList = try await file.load(.commonMetadata)
+            
+            let metaDataList = try await metadataAsset.load(.commonMetadata)
             
             for item in metaDataList {
                 if item.commonKey == .commonKeyArtist{
@@ -35,6 +34,15 @@ final class Music{
         } catch{
             print("Error while retrieving metadata \(error.localizedDescription)")
             return nil
+        }
+    }
+    func getPlayBackDuration() async -> Double{
+        do{
+            return try await metadataAsset.load(.duration).seconds
+        }
+        catch{
+            print("error getting playback")
+            return 0.0
         }
     }
 }
