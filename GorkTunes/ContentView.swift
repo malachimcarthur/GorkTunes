@@ -44,29 +44,19 @@ struct ContentView: View {
                                 }
                             }
                         )
-                    Button(action:{print("not implemented")}){//TODO: add functionality
-                        Image(systemName: "minus")
-                            .imageScale(.large)
-                            .font(.largeTitle)
-                            .background(Color.blue)
-                            .foregroundStyle(Color.white)
-                            .clipShape(Circle())
-                    }.buttonStyle(.borderedProminent)
-                        .controlSize(.extraLarge)
                 }
                 HStack{
-                    List{
+                    VStack{
                         ForEach(createMusicObjects(), id: \.title) { music in
                             HStack
                             {
                                 Button(
                                     action: {Task {await prepareMusic(music: music)}},
                                 label: {
-                                    Image(systemName: (music.isPlaying ? "pause.circle.fill" : "play.circle.fill"))
-                                        .font(.title)
-                                    Text(music.title)
+                                    Image(systemName: (music.isPlaying ? "pause.circle.fill" : "play.circle.fill")).font(.title)
+                                    Text(music.title).font(.title)
                                 })//.onLongPressGesture(perform: {print("long hold")})//TODO: add settings
-                            }
+                                Spacer()}.background(Color.gray.mix(with: Color.black, by: 0.6))
                             
                         }
                     }

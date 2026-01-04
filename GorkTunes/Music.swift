@@ -45,4 +45,10 @@ final class Music{
             return 0.0
         }
     }
+    func changeTitle(newTitle:String){
+        
+    }
+    func changeArtist(newArtist:String){
+        
+    }
 }
