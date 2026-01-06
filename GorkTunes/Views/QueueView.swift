@@ -9,7 +9,23 @@ import SwiftUI
 
 struct QueueView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack{
+            ZStack{
+                VStack{
+                    HStack{
+                        Text("Your Queue")
+                    }
+                    Spacer()
+                    HStack{
+                        Button(
+                            action: {
+                                Task{await AudioPlayer.shared.playQueue()}
+                            },
+                            label:{Label("Play Queue",systemImage: "play.circle.fill")})
+                    }
+                }
+            }
+        }
     }
 }
 

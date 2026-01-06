@@ -60,6 +60,8 @@ struct ContentView: View {
                                             })
                                     Spacer()
                                     Menu{
+                                        Button(action: {AudioPlayer.shared.addToQueue(music: music)},
+                                               label: {Label("Add to Queue", systemImage: "plus.circle")})
                                         NavigationLink(destination: EditView(music: music)
                                                        ,label: {Label("Edit", systemImage: "pencil.circle")})
                                         Button(

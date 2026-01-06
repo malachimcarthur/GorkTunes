@@ -9,11 +9,15 @@ import AVFAudio
 import UIKit
 import MediaPlayer
 
-class AudioPlayer {
+class AudioPlayer: NSObject, AVAudioPlayerDelegate {
     static let shared = AudioPlayer()
     private var player: AVAudioPlayer?
-    
-    private init() {
+    private var queue: [Music]
+    private var loopQueue:Bool
+    private override init() {
+        self.queue = []
+        self.loopQueue = false
+        super.init()
         setupAudio()
     }
     private func setupAudio(){
@@ -79,6 +83,7 @@ class AudioPlayer {
             player = try AVAudioPlayer(
                 contentsOf: music.URL
             )
+            player?.delegate = self
             if !music.isPlaying {
                 await playMusic(music: music)
             } else {
@@ -108,5 +113,18 @@ class AudioPlayer {
             MPNowPlayingInfoPropertyElapsedPlaybackTime: player?.currentTime ?? 0.0
         ]
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
+    }
+    func addToQueue(music:Music){
+        queue.append(music)
+    }
+    func removeFromQueue(index:Int){
+        queue.remove(at: index)
+    }
+    func playQueue() async{
+        for (_, music) in queue.enumerated() {
+            await playMusic(music: music)
+            removeFromQueue(index: 0)
+            print(queue)
+        }
     }
 }
