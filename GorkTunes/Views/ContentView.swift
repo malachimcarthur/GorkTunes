@@ -1,0 +1,87 @@
+//
+//  ContentView.swift
+//  GorkTunes
+//
+//  Created by Malachi McArthur on 12/20/25.
+//
+
+import SwiftUI
+import SwiftData
+import AVFAudio
+import Foundation
+import MediaPlayer
+
+struct ContentView: View {
+    @State private var player: AVAudioPlayer?
+    @State private var showFileImporter:Bool = false
+    @State private var musicList:[Music]?
+    var body: some View {
+        NavigationStack {
+            VStack(alignment: .leading){
+                HStack{
+                    Text("All Music").font(.title)
+                    Spacer()
+                    Button(action: {showFileImporter = true;
+                        Task{
+                            await musicList = Utils.createMusicObjects()}}){
+                        Image(systemName: "plus")
+                            .font(.largeTitle)
+                            .background(Color.blue)
+                            .foregroundStyle(Color.white)
+                            .font(.title)
+                            .clipShape(Circle())
+                    }.buttonStyle(.borderedProminent)
+                        .fileImporter(
+                            isPresented: $showFileImporter,
+                            allowedContentTypes: [.mp3],
+                            allowsMultipleSelection: true,
+                            onCompletion: {
+                                result in
+                                switch result {
+                                case .success(let urls):
+                                    Utils.convertURLsToData(urls: urls)
+                                case .failure(let error):
+                                    print("Failure to move file: \(error.localizedDescription)")
+                                }
+                            }
+                        )
+                }
+                HStack{
+                    VStack{
+                        ScrollView{
+                            ForEach(musicList ?? [], id: \.id) { music in
+                                HStack
+                                {
+                                    Button(
+                                        action: {Task {await AudioPlayer.shared.prepareMusic(music: music)}},
+                                        label: {
+                                            Image(systemName: "play.circle.fill").font(.title)
+                                                Text(music.title).font(.title)
+                                            })
+                                    Spacer()
+                                    Menu{
+                                        NavigationLink(destination: EditView(music: music)
+                                                       ,label: {Label("Edit", systemImage: "pencil.circle")})
+                                        Button(
+                                            role:.destructive,
+                                            action:{
+                                                Task{
+                                                    await Utils.deleteSong(music: music)
+                                                    musicList = await Utils.createMusicObjects()
+                                                }
+                                            },
+                                            label: {
+                                                Label("Remove",systemImage: "trash")
+                                            })
+                                    }label: {Label ( "", systemImage: "ellipsis.circle")}.font(.title)
+                                }.background(Color.gray.mix(with: Color.black, by: 0.6))
+                            }
+                        }
+                    }
+                }
+                Spacer()
+            }
+        }.preferredColorScheme(.dark)
+            .onAppear(perform: {Task{musicList = await Utils.createMusicObjects()}})
+    }
+}

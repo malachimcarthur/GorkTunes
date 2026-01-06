@@ -12,7 +12,7 @@ import SwiftData
 struct GorkTunesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MenuView()
         }
     }
 }
