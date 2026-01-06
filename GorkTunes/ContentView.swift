@@ -13,16 +13,17 @@ import MediaPlayer
 
 struct ContentView: View {
     @State private var player: AVAudioPlayer?
-    @State private var showFileImporter = false
-    @State private var fileManager = FileManager.default
+    @State private var showFileImporter:Bool = false
     @State private var songPlaying: Music?
+    @State private var musicList:[Music]?
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading){
                 HStack{
                     Text("GorkTunes").font(.title)
                     Spacer()
-                    Button(action: {showFileImporter = true}){
+                    Button(action: {showFileImporter = true;
+                        Task{await stopPlayingMusic(lastPlayedSong: songPlaying)}}){
                         Image(systemName: "plus")
                             .font(.largeTitle)
                             .background(Color.blue)
@@ -38,7 +39,7 @@ struct ContentView: View {
                                 result in
                                 switch result {
                                 case .success(let urls):
-                                    convertURLsToData(urls: urls)
+                                    Utils.convertURLsToData(urls: urls)
                                 case .failure(let error):
                                     print("Failure to move file: \(error.localizedDescription)")
                                 }
@@ -47,23 +48,42 @@ struct ContentView: View {
                 }
                 HStack{
                     VStack{
-                        ForEach(createMusicObjects(), id: \.title) { music in
-                            HStack
-                            {
-                                Button(
-                                    action: {Task {await prepareMusic(music: music)}},
-                                label: {
-                                    Image(systemName: (music.isPlaying ? "pause.circle.fill" : "play.circle.fill")).font(.title)
-                                    Text(music.title).font(.title)
-                                })//.onLongPressGesture(perform: {print("long hold")})//TODO: add settings
-                                Spacer()}.background(Color.gray.mix(with: Color.black, by: 0.6))
-                            
+                        ScrollView{
+                            ForEach(musicList ?? [], id: \.id) { music in
+                                HStack
+                                {
+                                    Button(
+                                        action: {Task {await prepareMusic(music: music)}},
+                                        label: {
+                                            Image(systemName: "play.circle.fill").font(.title)
+                                                Text(music.title).font(.title)
+                                            })
+                                    Spacer()
+                                    Menu{
+                                        NavigationLink(destination: EditView(music: music)
+                                                       ,label: {Label("Edit", systemImage: "wrench")})
+                                        Button(
+                                            role:.destructive,
+                                            action:{
+                                                Task{
+                                                    await stopPlayingMusic(lastPlayedSong: songPlaying)
+                                                    await Utils.deleteSong(music: music)
+                                                    musicList = await Utils.createMusicObjects()
+                                                }
+                                            },
+                                            label: {
+                                                Label("Remove",systemImage: "trash")
+                                            })
+                                    }label: {Label ( "", systemImage: "ellipsis.circle")}.font(.title)
+                                }.background(Color.gray.mix(with: Color.black, by: 0.6))
+                            }
                         }
                     }
                 }.onAppear(perform: {setUpAVAudio()})
                 Spacer()
             }
-        }
+        }.preferredColorScheme(.dark)
+            .onAppear(perform: {Task{musicList = await Utils.createMusicObjects()}})
     }
     private func setUpAVAudio(){
         do{
@@ -83,30 +103,30 @@ struct ContentView: View {
                 contentsOf: music.URL
             )
             if !music.isPlaying {
-                stopPlayingMusic(lastPlayedSong: songPlaying)
-                playMusic(music: music)
+                await stopPlayingMusic(lastPlayedSong: songPlaying)
+                await playMusic(music: music)
             } else {
-                pauseMusic(music: music)
+                await pauseMusic(music: music)
             }
         }
         catch {
             print("error in player \(error.localizedDescription)")
         }
     }
-    private func playMusic(music:Music){
+    private func playMusic(music:Music) async{
         player?.play()
         music.setPlaying(isPlaying: true)
-        print("playing \(music.title)")
+        print("playing \(await music.getTitle())")
         songPlaying = music
     }
-    private func pauseMusic(music:Music){
+    private func pauseMusic(music:Music) async{
         player?.pause()
         music.setPlaying(isPlaying: false)
-        print("pausing \(music.title)")
+        print("pausing \(await music.getTitle())")
     }
     private func updatePlayingInfo(music:Music) async{
         let nowPlayingInfo: [String: Any] = await [
-            MPMediaItemPropertyTitle: music.title,
+            MPMediaItemPropertyTitle: music.getTitle(),
             MPMediaItemPropertyArtist: music.getArtist() ?? "Not Given",
             MPMediaItemPropertyPlaybackDuration: music.getPlayBackDuration(),
             MPNowPlayingInfoPropertyPlaybackRate: player?.rate ?? 1.001,
@@ -114,9 +134,17 @@ struct ContentView: View {
         ]
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
     }
+    private func stopPlayingMusic(lastPlayedSong:Music?) async{
+        player?.stop()
+        if (lastPlayedSong == nil){
+            return
+        }
+        lastPlayedSong?.setPlaying(isPlaying: false)
+        print("Stopping \(await lastPlayedSong?.getTitle() ?? "error")")
+    }
     private func remoteControlAudio(){
         UIApplication.shared.beginReceivingRemoteControlEvents()
-        let remoteControledAudio = MPRemoteCommandCenter.shared()
+        let remoteControledAudio:MPRemoteCommandCenter = MPRemoteCommandCenter.shared()
         remoteControledAudio.pauseCommand.isEnabled = true
         remoteControledAudio.pauseCommand.addTarget {
             event in
@@ -140,75 +168,24 @@ struct ContentView: View {
                 event in
                 print("success")
                 return .success
-            }
-
+        }
         remoteControledAudio.changePlaybackPositionCommand.isEnabled = true
         remoteControledAudio.changePlaybackPositionCommand.addTarget{
                 event in
                 print("success")
                 return .success
-            }
-
+        }
         remoteControledAudio.seekForwardCommand.isEnabled = true
         remoteControledAudio.seekForwardCommand.addTarget{
                 event in
                 print("success")
                 return .success
-            }
+        }
         remoteControledAudio.seekBackwardCommand.isEnabled = true
         remoteControledAudio.seekBackwardCommand.addTarget{
                 event in
                 print("success")
                 return .success
-            }
-    }
-    private func convertURLsToData(urls:[URL]){
-        do{
-            for url in urls{
-                guard url.startAccessingSecurityScopedResource() else{
-                    print("could not access")
-                    return
-                }
-                let mp3Data = try Data(contentsOf: url)
-                addMP3DataInDocuments(data: mp3Data, MP3Name: url.lastPathComponent)
-                url.stopAccessingSecurityScopedResource()
-            }
         }
-        catch{
-            print("failed to convert files: \(error.localizedDescription)")
-        }
-    }
-    private func listFiles(directoyURL:URL) -> [String]{
-        do{
-            let files = try fileManager.contentsOfDirectory(atPath: directoyURL.path())
-            return files
-        } catch{
-            print("List files failed: \(error.localizedDescription)")
-            return ["error"]
-        }
-    }
-    private func addMP3DataInDocuments(data:Data,MP3Name:String){
-        do{
-            try data.write(to: URL.documentsDirectory.appendingPathComponent(MP3Name), options: [.atomic])
-            print("success: \(listFiles(directoyURL: URL.documentsDirectory))")
-        }
-        catch{
-            print("Failed to write to documents: \(error.localizedDescription)")
-        }
-    }
-    private func createMusicObjects()->[Music]{
-        var musicList:[Music] = []
-        for file in listFiles(directoyURL: URL.documentsDirectory){
-            let music = Music(URL: URL.documentsDirectory.appendingPathComponent(file),title: file.replacing(".mp3", with: ""))
-            musicList.append(music)
-        }
-        return musicList
-    }
-    private func stopPlayingMusic(lastPlayedSong:Music?){
-        if (lastPlayedSong == nil){
-            return
-        }
-        lastPlayedSong?.setPlaying(isPlaying: false)
-        print("Stopping \(lastPlayedSong?.title ?? "error")")
     }
 }

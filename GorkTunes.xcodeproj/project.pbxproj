@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BFECCF0F2F0C52D40014CD97 /* ID3TagEditor in Frameworks */ = {isa = PBXBuildFile; productRef = BFECCF0E2F0C52D40014CD97 /* ID3TagEditor */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		BFBC5E5B2EF7AB340004C47D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFECCF0F2F0C52D40014CD97 /* ID3TagEditor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +96,7 @@
 				BFBC5E4D2EF7AB310004C47D /* GorkTunes */,
 				BFBC5E5D2EF7AB340004C47D /* GorkTunesTests */,
 				BFBC5E672EF7AB340004C47D /* GorkTunesUITests */,
+				BFECCF0D2F0C52D40014CD97 /* Frameworks */,
 				BFBC5E4C2EF7AB310004C47D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +109,13 @@
 				BFBC5E642EF7AB340004C47D /* GorkTunesUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BFECCF0D2F0C52D40014CD97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +138,7 @@
 			);
 			name = GorkTunes;
 			packageProductDependencies = (
+				BFECCF0E2F0C52D40014CD97 /* ID3TagEditor */,
 			);
 			productName = GorkTunes;
 			productReference = BFBC5E4B2EF7AB310004C47D /* GorkTunes.app */;
@@ -208,6 +222,9 @@
 			);
 			mainGroup = BFBC5E422EF7AB310004C47D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BFECCF0C2F0C50400014CD97 /* XCRemoteSwiftPackageReference "ID3TagEditor" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BFBC5E4C2EF7AB310004C47D /* Products */;
 			projectDirPath = "";
@@ -595,6 +612,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BFECCF0C2F0C50400014CD97 /* XCRemoteSwiftPackageReference "ID3TagEditor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/chicio/ID3TagEditor";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BFECCF0E2F0C52D40014CD97 /* ID3TagEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BFECCF0C2F0C50400014CD97 /* XCRemoteSwiftPackageReference "ID3TagEditor" */;
+			productName = ID3TagEditor;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BFBC5E432EF7AB310004C47D /* Project object */;
 }
