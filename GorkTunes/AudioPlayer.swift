@@ -14,9 +14,11 @@ class AudioPlayer: NSObject, AVAudioPlayerDelegate {
     private var player: AVAudioPlayer?
     private var queue: [Music]
     private var loopQueue:Bool
+    private var queueIsPlaying:Bool
     private override init() {
         self.queue = []
         self.loopQueue = false
+        self.queueIsPlaying = false
         super.init()
         setupAudio()
     }
@@ -54,9 +56,9 @@ class AudioPlayer: NSObject, AVAudioPlayerDelegate {
         }
         remoteControledAudio.nextTrackCommand.isEnabled = true
         remoteControledAudio.nextTrackCommand.addTarget{
-                event in
-                print("success")
-                return .success
+            event in
+            self.nextInQueue()
+            return .success
         }
         remoteControledAudio.changePlaybackPositionCommand.isEnabled = true
         remoteControledAudio.changePlaybackPositionCommand.addTarget{
@@ -121,10 +123,38 @@ class AudioPlayer: NSObject, AVAudioPlayerDelegate {
         queue.remove(at: index)
     }
     func playQueue() async{
-        for (_, music) in queue.enumerated() {
-            await playMusic(music: music)
-            removeFromQueue(index: 0)
-            print(queue)
+        if queue.isEmpty{
+            print("no songs in queue")
+            return
         }
+        queueIsPlaying = true
+        await prepareMusic(music: queue[0])
+    }
+    private func nextInQueue() {
+        if !queueIsPlaying{
+            print("queue is not playing")
+            return
+        }
+        if queue.endIndex == 1 || !loopQueue{
+            print("Stopping current Queue")
+            queueIsPlaying = false
+            removeFromQueue(index: 0)
+            return
+        }
+        if loopQueue{
+            queue.append(queue[0])
+        }
+        removeFromQueue(index: 0)
+        Task{
+            await prepareMusic(music: queue[0])
+        }
+    }
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        self.player?.stop()
+        print("audio Finished")
+        nextInQueue()
+    }
+    func getQueue() -> [Music]{
+        return queue
     }
 }

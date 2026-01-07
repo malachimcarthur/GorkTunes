@@ -36,7 +36,7 @@ struct MenuView: View{
                     }
                     Spacer()
                     HStack{
-                        NavigationLink(destination: QueueView()
+                        NavigationLink(destination: QueueView(queue: AudioPlayer.shared.getQueue())
                                        ,label: {Label("Music Queue", systemImage: "play.circle.fill")})
                         .font(.largeTitle)
                         .background(GlassEffectContainer{
