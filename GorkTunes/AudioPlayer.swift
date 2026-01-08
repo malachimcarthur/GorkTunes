@@ -135,7 +135,7 @@ class AudioPlayer: NSObject, AVAudioPlayerDelegate {
             print("queue is not playing")
             return
         }
-        if queue.endIndex == 1 || !loopQueue{
+        if queue.endIndex == 1 && !loopQueue{
             print("Stopping current Queue")
             queueIsPlaying = false
             removeFromQueue(index: 0)
