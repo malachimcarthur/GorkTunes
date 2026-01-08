@@ -39,6 +39,7 @@ struct QueueView: View {
                                 Task{await AudioPlayer.shared.playQueue()}
                             },
                             label:{Label("Play Queue",systemImage: "play.circle.fill")})
+                        .buttonStyle(.borderedProminent)
                     }
                 }.onAppear(perform: {queue = AudioPlayer.shared.getQueue()})
             }
