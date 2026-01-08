@@ -8,15 +8,15 @@
 import AVFAudio
 import UIKit
 import MediaPlayer
+import SwiftUI
 
 class AudioPlayer: NSObject, AVAudioPlayerDelegate {
     static let shared = AudioPlayer()
+    @StateObject private var musicLists = MusicLists.shared
     private var player: AVAudioPlayer?
-    private var queue: [Music]
     private var loopQueue:Bool
     private var queueIsPlaying:Bool
     private override init() {
-        self.queue = []
         self.loopQueue = false
         self.queueIsPlaying = false
         super.init()
@@ -117,44 +117,41 @@ class AudioPlayer: NSObject, AVAudioPlayerDelegate {
         MPNowPlayingInfoCenter.default().nowPlayingInfo = nowPlayingInfo
     }
     func addToQueue(music:Music){
-        queue.append(music)
+        musicLists.musicQueue.append(music)
     }
     func removeFromQueue(index:Int){
-        queue.remove(at: index)
+        musicLists.musicQueue.remove(at: index)
     }
     func playQueue() async{
-        if queue.isEmpty{
+        if musicLists.musicQueue.isEmpty{
             print("no songs in queue")
             return
         }
         queueIsPlaying = true
-        await prepareMusic(music: queue[0])
+        await prepareMusic(music: musicLists.musicQueue[0])
     }
     private func nextInQueue() {
         if !queueIsPlaying{
             print("queue is not playing")
             return
         }
-        if queue.endIndex == 1 && !loopQueue{
+        if musicLists.musicQueue.endIndex == 1 && !loopQueue{
             print("Stopping current Queue")
             queueIsPlaying = false
             removeFromQueue(index: 0)
             return
         }
         if loopQueue{
-            queue.append(queue[0])
+            musicLists.musicQueue.append(musicLists.musicQueue[0])
         }
         removeFromQueue(index: 0)
         Task{
-            await prepareMusic(music: queue[0])
+            await prepareMusic(music: musicLists.musicQueue[0])
         }
     }
     func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
         self.player?.stop()
         print("audio Finished")
         nextInQueue()
-    }
-    func getQueue() -> [Music]{
-        return queue
     }
 }

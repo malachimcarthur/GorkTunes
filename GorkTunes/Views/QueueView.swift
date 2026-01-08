@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct QueueView: View {
-    @State var queue:[Music]
+    @StateObject private var musicLists = MusicLists.shared
     var body: some View {
         NavigationStack{
             ZStack{
@@ -18,7 +18,7 @@ struct QueueView: View {
                     }
                     HStack{
                         ScrollView{
-                            ForEach(queue, id: \.id) { music in
+                            ForEach(musicLists.musicQueue, id: \.id) { music in
                                 HStack
                                 {
                                     Button(
@@ -41,7 +41,7 @@ struct QueueView: View {
                             label:{Label("Play Queue",systemImage: "play.circle.fill")})
                         .buttonStyle(.borderedProminent)
                     }
-                }.onAppear(perform: {queue = AudioPlayer.shared.getQueue()})
+                }
             }
         }
     }

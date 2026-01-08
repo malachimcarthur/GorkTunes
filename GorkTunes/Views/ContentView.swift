@@ -14,7 +14,7 @@ import MediaPlayer
 struct ContentView: View {
     @State private var player: AVAudioPlayer?
     @State private var showFileImporter:Bool = false
-    @State private var musicList:[Music]?
+    @StateObject private var musicLists = MusicLists()
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading){
@@ -23,7 +23,7 @@ struct ContentView: View {
                     Spacer()
                     Button(action: {showFileImporter = true;
                         Task{
-                            await musicList = Utils.createMusicObjects()}}){
+                            await musicLists.fullMusicList = Utils.createMusicObjects()}}){
                         Image(systemName: "plus")
                             .font(.largeTitle)
                             .background(Color.blue)
@@ -49,7 +49,7 @@ struct ContentView: View {
                 HStack{
                     VStack{
                         ScrollView{
-                            ForEach(musicList ?? [], id: \.id) { music in
+                            ForEach(musicLists.fullMusicList, id: \.id) { music in
                                 HStack
                                 {
                                     Button(
@@ -69,7 +69,7 @@ struct ContentView: View {
                                             action:{
                                                 Task{
                                                     await Utils.deleteSong(music: music)
-                                                    musicList = await Utils.createMusicObjects()
+                                                    musicLists.fullMusicList = await Utils.createMusicObjects()
                                                 }
                                             },
                                             label: {
@@ -84,6 +84,6 @@ struct ContentView: View {
                 Spacer()
             }
         }.preferredColorScheme(.dark)
-            .onAppear(perform: {Task{musicList = await Utils.createMusicObjects()}})
+            .onAppear(perform: {Task{musicLists.fullMusicList = await Utils.createMusicObjects()}})
     }
 }

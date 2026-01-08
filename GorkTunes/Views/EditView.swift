@@ -12,6 +12,7 @@ struct EditView: View {
     @State private var title = ""
     @State private var artist = ""
     @State private var showExitAlert = false
+    @StateObject private var musicLists = MusicLists()
     @Environment(\.dismiss) private var dismiss
     var body: some View {
         NavigationStack{
@@ -71,5 +72,6 @@ struct EditView: View {
     private func saveChanges() async {
         music.changeArtist(newArtist: artist)
         await music.changeTitle(newTitle: title)
+        musicLists.fullMusicList = await Utils.createMusicObjects()
     }
 }
