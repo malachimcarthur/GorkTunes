@@ -15,6 +15,11 @@ struct QueueView: View {
                 VStack{
                     HStack{
                         Text("Your Queue").font(.title)
+                        Spacer()
+                        Button(
+                            action: {AudioPlayer.shared.togleLoopQueue()},
+                            label: {Label("Loop Queue",systemImage: "repeat")}
+                        ).buttonStyle(.borderedProminent).background(AudioPlayer.shared.loopQueue ? Color.blue : Color.gray)
                     }
                     HStack{
                         ScrollView{
