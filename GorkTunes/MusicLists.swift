@@ -12,7 +12,9 @@ class MusicLists:ObservableObject{
     static let shared = MusicLists()
     @Published var fullMusicList:[Music] = []
     @Published var musicQueue:[Music]
+    @Published var loopQueue:Bool
     init() {
         self.musicQueue = []
+        self.loopQueue = false
     }
 }

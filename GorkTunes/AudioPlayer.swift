@@ -14,10 +14,8 @@ class AudioPlayer: NSObject, AVAudioPlayerDelegate {
     static let shared = AudioPlayer()
     @StateObject private var musicLists = MusicLists.shared
     private var player: AVAudioPlayer?
-    var loopQueue:Bool
     private var queueIsPlaying:Bool
     private override init() {
-        self.loopQueue = false
         self.queueIsPlaying = false
         super.init()
         setupAudio()
@@ -131,10 +129,10 @@ class AudioPlayer: NSObject, AVAudioPlayerDelegate {
         await prepareMusic(music: musicLists.musicQueue[0])
     }
     func togleLoopQueue(){
-        if self.loopQueue {
-            self.loopQueue = false
+        if musicLists.loopQueue {
+            musicLists.loopQueue = false
         }else{
-            self.loopQueue = true
+            musicLists.loopQueue = true
         }
     }
     private func nextInQueue() {
@@ -142,13 +140,14 @@ class AudioPlayer: NSObject, AVAudioPlayerDelegate {
             print("queue is not playing")
             return
         }
-        if musicLists.musicQueue.endIndex == 1 && !loopQueue{
+        if musicLists.musicQueue.endIndex == 1 && !musicLists.loopQueue{
             print("Stopping current Queue")
             queueIsPlaying = false
             removeFromQueue(index: 0)
             return
         }
-        if loopQueue{
+        if musicLists.loopQueue{
+            musicLists.musicQueue[0].isPlaying = false
             musicLists.musicQueue.append(musicLists.musicQueue[0])
         }
         removeFromQueue(index: 0)

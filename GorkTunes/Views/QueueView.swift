@@ -19,7 +19,9 @@ struct QueueView: View {
                         Button(
                             action: {AudioPlayer.shared.togleLoopQueue()},
                             label: {Label("Loop Queue",systemImage: "repeat")}
-                        ).buttonStyle(.borderedProminent).background(AudioPlayer.shared.loopQueue ? Color.blue : Color.gray)
+                        ).padding()
+                            .tint(musicLists.loopQueue ? Color.blue : Color.gray)
+                            .buttonStyle(.borderedProminent)
                     }
                     HStack{
                         ScrollView{
