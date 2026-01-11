@@ -21,9 +21,7 @@ struct ContentView: View {
                 HStack{
                     Text("All Music").font(.title)
                     Spacer()
-                    Button(action: {showFileImporter = true;
-                        Task{
-                            await musicLists.fullMusicList = Utils.createMusicObjects()}}){
+                    Button(action: {showFileImporter = true}){
                         Image(systemName: "plus")
                             .font(.largeTitle)
                             .background(Color.blue)
@@ -40,6 +38,9 @@ struct ContentView: View {
                                 switch result {
                                 case .success(let urls):
                                     Utils.convertURLsToData(urls: urls)
+                                    Task{
+                                        await musicLists.fullMusicList = Utils.createMusicObjects()
+                                    }
                                 case .failure(let error):
                                     print("Failure to move file: \(error.localizedDescription)")
                                 }

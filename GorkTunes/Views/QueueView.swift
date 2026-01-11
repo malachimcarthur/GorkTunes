@@ -33,7 +33,8 @@ struct QueueView: View {
                                                 Text("\(index + 1) \(music.title)").font(.title)
                                             })
                                     Spacer()
-                                    Button(role:.destructive, action: {AudioPlayer.shared.removeFromQueue(index: index)}, label: {Label("Remove", systemImage: "trash")})
+                                    Button(role:.destructive, action: {AudioPlayer.shared.removeFromQueue(index: index)},
+                                           label: {Label("", systemImage: "trash")})
                                 }.background(Color.gray.mix(with: Color.black, by: 0.6))
                             }
                         }
