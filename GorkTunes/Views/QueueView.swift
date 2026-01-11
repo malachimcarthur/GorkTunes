@@ -25,16 +25,15 @@ struct QueueView: View {
                     }
                     HStack{
                         ScrollView{
-                            ForEach(musicLists.musicQueue, id: \.id) { music in
+                            ForEach(musicLists.musicQueue.enumerated(), id: \.offset) {index, music in
                                 HStack
                                 {
                                     Button(
                                         action: {}, label: {
-                                            Image(systemName: "play.circle.fill").font(.title)
-                                                Text(music.title).font(.title)
+                                                Text("\(index + 1) \(music.title)").font(.title)
                                             })
                                     Spacer()
-                                    Button(role:.destructive, action: {}, label: {Label("Remove", systemImage: "trash")})
+                                    Button(role:.destructive, action: {AudioPlayer.shared.removeFromQueue(index: index)}, label: {Label("Remove", systemImage: "trash")})
                                 }.background(Color.gray.mix(with: Color.black, by: 0.6))
                             }
                         }
@@ -46,6 +45,10 @@ struct QueueView: View {
                                 Task{await AudioPlayer.shared.playQueue()}
                             },
                             label:{Label("Play Queue",systemImage: "play.circle.fill")})
+                        .buttonStyle(.borderedProminent)
+                        Button(
+                            action: {AudioPlayer.shared.nextInQueue()},
+                            label:{Label("Skip",systemImage: "forward.circle.fill")})
                         .buttonStyle(.borderedProminent)
                     }
                 }

@@ -135,7 +135,7 @@ class AudioPlayer: NSObject, AVAudioPlayerDelegate {
             musicLists.loopQueue = true
         }
     }
-    private func nextInQueue() {
+    func nextInQueue() {
         if !queueIsPlaying{
             print("queue is not playing")
             return
