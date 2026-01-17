@@ -14,7 +14,7 @@ import MediaPlayer
 struct ContentView: View {
     @State private var player: AVAudioPlayer?
     @State private var showFileImporter:Bool = false
-    @StateObject private var musicLists = MusicLists()
+    @StateObject private var musicLists = MusicLists.shared
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading){
