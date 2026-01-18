@@ -35,11 +35,36 @@ struct PlaylistsView: View {
                     }
                 }
                 Spacer()
-                ForEach(musicLists.playlists, id: \.id){ playlist in
-                    HStack{
-                        Text(playlist.title)
+                ScrollView{
+                    ForEach(musicLists.playlists, id: \.id) { playlist in
+                        HStack
+                        {
+                            Button(
+                                action:{},
+                                label: {Text(playlist.title).font(.title)}
+                            )
+                            Spacer()
+                            Menu{
+                                Button(
+                                    action:{addToQueue(playlist: playlist)},
+                                    label: {Label("Add to Queue",systemImage: "plus.circle")}
+                                )
+                                NavigationLink(destination: EditPlaylistView(playlist: playlist)
+                                               ,label: {Label("Edit", systemImage: "pencil.circle")})
+                                Button(
+                                    role:.destructive,
+                                    action:{
+                                        modelContext.delete(playlist)
+                                        updatePlaylists()
+                                    },
+                                    label: {
+                                        Label("Remove",systemImage: "trash")
+                                    })
+                            }label: {Label ( "", systemImage: "ellipsis.circle")}.font(.title)
+                        }.background(Color.gray.mix(with: Color.black, by: 0.6))
                     }
                 }
+                Spacer()
             }
             Spacer()
         }.onAppear(perform: {
@@ -51,6 +76,12 @@ struct PlaylistsView: View {
             musicLists.playlists = try modelContext.fetch(FetchDescriptor<Playlist>())
         }catch{
             print("Failed to create playlists \(error.localizedDescription)")
+        }
+    }
+    private func addToQueue(playlist:Playlist){
+        let queueToAdd:[Music] = playlist.musicList.shuffled()
+        for music in queueToAdd{
+            AudioPlayer.shared.addToQueue(music: music)
         }
     }
 }

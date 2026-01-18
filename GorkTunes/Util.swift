@@ -24,7 +24,7 @@ class Utils{
             print("Created \(await music.getTitle())")
             musicList.append(music)
         }
-        return musicList
+        return musicList.sorted{ $0.title < $1.title }
     }
     static func convertURLsToData(urls:[URL]){
         do{
