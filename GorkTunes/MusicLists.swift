@@ -14,11 +14,9 @@ class MusicLists:ObservableObject{
     @Published var fullMusicList:[Music] = []
     @Published var musicQueue:[Music]
     @Published var loopQueue:Bool
-    //@Published var playlists:[Playlist]
+    @Published var playlists:[Playlist] = []
     init() {
         self.musicQueue = []
         self.loopQueue = false
-        //let fetchRequest: NSFetchRequest<Playlist> = Playlist.fetchRequest() as! NSFetchRequest<Playlist>
-        //self.playlists = try! PersistentStorage.shared.context.fetch(fetchRequest)
     }
 }

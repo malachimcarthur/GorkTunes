@@ -7,10 +7,13 @@
 
 import SwiftUI
 import CoreData
+import SwiftData
 
 struct PlaylistsView: View {
     @State private var showNewPlaylistAlert:Bool = false
     @State private var title = ""
+    @StateObject private var musicLists = MusicLists.shared
+    @Environment(\.modelContext) private var modelContext
     var body: some View {
         ZStack{
             VStack{
@@ -23,20 +26,33 @@ struct PlaylistsView: View {
                         TextField("Enter Playlist Name",text:$title)
                         Button(
                             action: {
-                                let entityDescription = NSEntityDescription.entity(forEntityName: title, in: PersistentStorage.shared.context)
-                                _ = Playlist(entity: entityDescription!, insertInfo: PersistentStorage.shared.context, title: title)
+                                let newPlaylist = Playlist(title: title)
+                                modelContext.insert(newPlaylist)
+                                updatePlaylists()
                             },
                             label: {Label("Create New Playlist", systemImage: "checkmark")})
                         Button(role:.cancel,action: {}, label: {Label("Cancel", systemImage: "trash")})
                     }
                 }
                 Spacer()
+                ForEach(musicLists.playlists, id: \.id){ playlist in
+                    HStack{
+                        Text(playlist.title)
+                    }
+                }
             }
             Spacer()
+        }.onAppear(perform: {
+            updatePlaylists()
+        })
+    }
+    private func updatePlaylists(){
+        do{
+            musicLists.playlists = try modelContext.fetch(FetchDescriptor<Playlist>())
+        }catch{
+            print("Failed to create playlists \(error.localizedDescription)")
         }
     }
 }
 
-#Preview {
-    PlaylistsView()
-}
+

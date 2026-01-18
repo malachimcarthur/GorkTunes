@@ -7,24 +7,22 @@
 import Foundation
 import AVFoundation
 import ID3TagEditor
-// TODO: Change how title is collected
-final class Music{
+
+
+final class Music: Codable{
     var URL: URL
     var isPlaying:Bool = false
     var title:String = ""
     var id = UUID()
-    private var metadataAsset:AVURLAsset
-    private var id3TagEditor = ID3TagEditor()
     init(URL: URL) {
         self.URL = URL
-        self.metadataAsset = AVURLAsset(url: self.URL)
     }
     func setPlaying(isPlaying:Bool) {
         self.isPlaying = isPlaying
     }
     func getArtist() async-> String?{
         do{
-            
+            let metadataAsset = AVURLAsset(url: self.URL)
             let metaDataList = try await metadataAsset.load(.commonMetadata)
             
             for item in metaDataList {
@@ -40,6 +38,7 @@ final class Music{
     }
     func getPlayBackDuration() async -> Double{
         do{
+            let metadataAsset = AVURLAsset(url: self.URL)
             return try await metadataAsset.load(.duration).seconds
         }
         catch{
@@ -50,6 +49,7 @@ final class Music{
     func getTitle() async -> String{
         do{
             var title: String?
+            let metadataAsset = AVURLAsset(url: self.URL)
             let metaDataList = try await metadataAsset.load(.commonMetadata)
             for item in metaDataList {
                 if item.commonKey == .commonKeyTitle{
@@ -68,6 +68,7 @@ final class Music{
             if await newTitle == getTitle(){
                 return
             }
+            let id3TagEditor = ID3TagEditor()
             let id3Tag = try id3TagEditor.read(from: self.URL.path)
             id3Tag?.frames[.title] = ID3FrameWithStringContent(content: newTitle)
             try id3TagEditor.write(tag: id3Tag!, to: self.URL.path,andSaveTo: self.URL.path)
@@ -78,6 +79,7 @@ final class Music{
     }
     func changeArtist(newArtist:String){
         do {
+            let id3TagEditor = ID3TagEditor()
             let id3Tag = try id3TagEditor.read(from: self.URL.path)
             id3Tag?.frames[.artist] = ID3FrameWithStringContent(content: newArtist)
             try id3TagEditor.write(tag: id3Tag!, to: self.URL.path)

@@ -14,5 +14,6 @@ struct GorkTunesApp: App {
         WindowGroup {
             MenuView()
         }
+        .modelContainer(for: [Playlist.self])
     }
 }
