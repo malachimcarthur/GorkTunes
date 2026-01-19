@@ -39,8 +39,8 @@ struct PlaylistsView: View {
                     ForEach(musicLists.playlists, id: \.id) { playlist in
                         HStack
                         {
-                            Button(
-                                action:{},
+                            NavigationLink(
+                                destination: FocusedPlaylistView(playlist: playlist),
                                 label: {Text(playlist.title).font(.title)}
                             )
                             Spacer()
@@ -50,7 +50,7 @@ struct PlaylistsView: View {
                                     label: {Label("Add to Queue",systemImage: "plus.circle")}
                                 )
                                 NavigationLink(destination: EditPlaylistView(playlist: playlist)
-                                               ,label: {Label("Edit", systemImage: "pencil.circle")})
+                                    ,label: {Label("Edit", systemImage: "pencil.circle")})
                                 Button(
                                     role:.destructive,
                                     action:{
