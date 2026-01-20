@@ -22,4 +22,7 @@ final class Playlist{
     func addMusic(music:Music){
         musicList.append(music)
     }
+    func removeMusic(index:Int){
+        musicList.remove(at: index)
+    }
 }
