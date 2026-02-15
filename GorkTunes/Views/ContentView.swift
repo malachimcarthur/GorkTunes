@@ -57,8 +57,8 @@ struct ContentView: View {
                                         action: {Task {await AudioPlayer.shared.prepareMusic(music: music)}},
                                         label: {
                                             Image(systemName: "play.circle.fill").font(.title)
-                                                Text(music.title).font(.title)
-                                            })
+                                            Text(music.title).font(.title)
+                                        })
                                     Spacer()
                                     Menu{
                                         Button(action: {AudioPlayer.shared.addToQueue(music: music)},
@@ -79,6 +79,10 @@ struct ContentView: View {
                                     }label: {Label ( "", systemImage: "ellipsis.circle")}.font(.title)
                                 }.background(Color.gray.mix(with: Color.black, by: 0.6))
                             }
+                        Button(
+                            action:{musicLists.musicQueue = musicLists.fullMusicList.shuffled()},
+                            label: {Text("Add all to queue")}
+                        )
                         }
                     }
                 }
