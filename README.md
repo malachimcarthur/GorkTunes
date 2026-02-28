@@ -1,2 +1,3 @@
 # GorkTunes
-This is a simple mp3 player I made for my Iphone.
+Simple Iphone app made for my daily commutes.
+Organizes and plays mp3 files.
