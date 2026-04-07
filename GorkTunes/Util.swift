@@ -57,4 +57,11 @@ class Utils{
             print("Could Not Remove \(await music.getTitle()): \(error.localizedDescription)")
         }
     }
+    static func getClipboardString() async -> String {
+        var songList:String = ""
+        for music in MusicLists.shared.fullMusicList{
+            await songList += "\(music.getTitle()), \(music.getArtist() ?? "")\n"
+        }
+        return songList
+    }
 }

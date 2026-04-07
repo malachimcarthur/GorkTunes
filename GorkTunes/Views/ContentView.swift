@@ -81,7 +81,13 @@ struct ContentView: View {
                             }
                         Button(
                             action:{musicLists.musicQueue = musicLists.fullMusicList.shuffled()},
-                            label: {Text("Add all to queue")}
+                            label: {Label("Add all to queue",systemImage:"plus.circle")}
+                        )
+                        Button(
+                            action: {
+                                Task{await UIPasteboard.general.string = Utils.getClipboardString()}
+                            },
+                            label: {Text("Copy Song list to clipboard")}
                         )
                         }
                     }
