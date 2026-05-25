@@ -1,0 +1,646 @@
+{
+  "" : {
+    "const-values" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagEditor-primary.swiftconstvalues",
+    "dependencies" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagEditor-primary.d",
+    "diagnostics" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagEditor-primary.dia",
+    "emit-module-dependencies" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagEditor-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagEditor-primary-emit-module.dia",
+    "pch" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagEditor-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagEditor-primary.swiftdeps"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Common/PaddingAdder.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/PaddingAdder.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/PaddingAdder.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/PaddingAdder.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Common/PaddingAdderToEndOfContentUsingNullChar.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/PaddingAdderToEndOfContentUsingNullChar.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/PaddingAdderToEndOfContentUsingNullChar.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/PaddingAdderToEndOfContentUsingNullChar.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Common/PaddingRemover.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/PaddingRemover.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/PaddingRemover.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/PaddingRemover.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Common/PaddingRemoverUsingTrimming.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/PaddingRemoverUsingTrimming.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/PaddingRemoverUsingTrimming.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/PaddingRemoverUsingTrimming.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Common/SynchsafeEncoder.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/SynchsafeEncoder.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/SynchsafeEncoder.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/SynchsafeEncoder.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Common/SynchsafeIntegerDecoder.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/SynchsafeIntegerDecoder.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/SynchsafeIntegerDecoder.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/SynchsafeIntegerDecoder.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Common/SynchsafeIntegerEncoder.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/SynchsafeIntegerEncoder.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/SynchsafeIntegerEncoder.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/SynchsafeIntegerEncoder.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Common/UInt32ToByteArrayAdapter.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/UInt32ToByteArrayAdapter.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/UInt32ToByteArrayAdapter.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/UInt32ToByteArrayAdapter.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Common/UInt32ToByteArrayAdapterUsingUnsafePointer.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/UInt32ToByteArrayAdapterUsingUnsafePointer.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/UInt32ToByteArrayAdapterUsingUnsafePointer.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/UInt32ToByteArrayAdapterUsingUnsafePointer.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/FrameContentAdapter.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameContentAdapter.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameContentAdapter.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameContentAdapter.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/FrameContentSizeCalculator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameContentSizeCalculator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameContentSizeCalculator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameContentSizeCalculator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/FrameFlagsCreator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameFlagsCreator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameFlagsCreator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameFlagsCreator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/FrameFromIntegerContentAdapter.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameFromIntegerContentAdapter.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameFromIntegerContentAdapter.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameFromIntegerContentAdapter.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/FrameFromStringContentAdapter.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameFromStringContentAdapter.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameFromStringContentAdapter.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameFromStringContentAdapter.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/FrameFromStringContentCreator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameFromStringContentCreator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameFromStringContentCreator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameFromStringContentCreator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/FrameHeaderCreator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameHeaderCreator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameHeaderCreator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameHeaderCreator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3AttachedPictureFrameCreator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3AttachedPictureFrameCreator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3AttachedPictureFrameCreator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3AttachedPictureFrameCreator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3AttachedPicturesFramesCreator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3AttachedPicturesFramesCreator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3AttachedPicturesFramesCreator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3AttachedPicturesFramesCreator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3AttachedPicturesFramesCreatorFactory.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3AttachedPicturesFramesCreatorFactory.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3AttachedPicturesFramesCreatorFactory.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3AttachedPicturesFramesCreatorFactory.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3DiscPositionFrameCreator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3DiscPositionFrameCreator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3DiscPositionFrameCreator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3DiscPositionFrameCreator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3FrameContentCreator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameContentCreator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameContentCreator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameContentCreator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3FrameContentSizeCalculator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameContentSizeCalculator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameContentSizeCalculator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameContentSizeCalculator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3FrameCreator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameCreator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameCreator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameCreator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3FrameCreatorsFactory.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameCreatorsFactory.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameCreatorsFactory.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameCreatorsFactory.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3FrameFlagsCreator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameFlagsCreator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameFlagsCreator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameFlagsCreator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3FrameFromStringContentCreator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameFromStringContentCreator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameFromStringContentCreator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameFromStringContentCreator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3FrameFromStringContentCreatorWithISO88591EncodingFactory.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameFromStringContentCreatorWithISO88591EncodingFactory.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameFromStringContentCreatorWithISO88591EncodingFactory.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameFromStringContentCreatorWithISO88591EncodingFactory.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3FrameFromStringContentCreatorWithUTF16EncodingFactory.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameFromStringContentCreatorWithUTF16EncodingFactory.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameFromStringContentCreatorWithUTF16EncodingFactory.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameFromStringContentCreatorWithUTF16EncodingFactory.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3FrameHeaderCreator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameHeaderCreator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameHeaderCreator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameHeaderCreator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3FrameHeaderCreatorFactory.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameHeaderCreatorFactory.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameHeaderCreatorFactory.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameHeaderCreatorFactory.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3FramesCreator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FramesCreator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FramesCreator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FramesCreator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3FramesWithLocalizedContentCreator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FramesWithLocalizedContentCreator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FramesWithLocalizedContentCreator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FramesWithLocalizedContentCreator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3FramesWithLocalizedContentCreatorFactory.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FramesWithLocalizedContentCreatorFactory.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FramesWithLocalizedContentCreatorFactory.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FramesWithLocalizedContentCreatorFactory.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3GenreFrameCreator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3GenreFrameCreator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3GenreFrameCreator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3GenreFrameCreator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3ISO88591StringToByteAdapter.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3ISO88591StringToByteAdapter.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3ISO88591StringToByteAdapter.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3ISO88591StringToByteAdapter.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3LocalizedFrameCreator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3LocalizedFrameCreator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3LocalizedFrameCreator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3LocalizedFrameCreator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3RecordingDateTimeFrameCreator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3RecordingDateTimeFrameCreator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3RecordingDateTimeFrameCreator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3RecordingDateTimeFrameCreator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3RecordingDayMonthFrameCreator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3RecordingDayMonthFrameCreator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3RecordingDayMonthFrameCreator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3RecordingDayMonthFrameCreator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3RecordingHourMinuteFrameCreator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3RecordingHourMinuteFrameCreator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3RecordingHourMinuteFrameCreator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3RecordingHourMinuteFrameCreator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3RecordingTimesFrameCreatorsFactory.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3RecordingTimesFrameCreatorsFactory.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3RecordingTimesFrameCreatorsFactory.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3RecordingTimesFrameCreatorsFactory.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3TagCreator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagCreator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagCreator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagCreator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3TagCreatorFactory.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagCreatorFactory.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagCreatorFactory.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagCreatorFactory.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3TagHeaderCreator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagHeaderCreator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagHeaderCreator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagHeaderCreator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3TimestampCreator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TimestampCreator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TimestampCreator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TimestampCreator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3TrackPositionFrameCreator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TrackPositionFrameCreator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TrackPositionFrameCreator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TrackPositionFrameCreator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3UTF16StringToByteAdapter.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3UTF16StringToByteAdapter.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3UTF16StringToByteAdapter.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3UTF16StringToByteAdapter.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/ID3iTunesFrameCreatorsFactory.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3iTunesFrameCreatorsFactory.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3iTunesFrameCreatorsFactory.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3iTunesFrameCreatorsFactory.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/LocalizedFrameCreator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/LocalizedFrameCreator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/LocalizedFrameCreator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/LocalizedFrameCreator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/StringToBytesAdapter.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/StringToBytesAdapter.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/StringToBytesAdapter.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/StringToBytesAdapter.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Create/TimestampCreator.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/TimestampCreator.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/TimestampCreator.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/TimestampCreator.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Frame/FrameName.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameName.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameName.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameName.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Frame/FrameType.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameType.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameType.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameType.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Frame/ID3AttachedPictureFrameConfiguration.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3AttachedPictureFrameConfiguration.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3AttachedPictureFrameConfiguration.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3AttachedPictureFrameConfiguration.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Frame/ID3Frame.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3Frame.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3Frame.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3Frame.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Frame/ID3FrameAttachedPicture.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameAttachedPicture.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameAttachedPicture.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameAttachedPicture.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Frame/ID3FrameConfiguration.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameConfiguration.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameConfiguration.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameConfiguration.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Frame/ID3FrameContentLanguage.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameContentLanguage.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameContentLanguage.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameContentLanguage.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Frame/ID3FrameGenre.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameGenre.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameGenre.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameGenre.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Frame/ID3FramePartofTotal.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FramePartofTotal.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FramePartofTotal.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FramePartofTotal.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Frame/ID3FrameRecordingDateTime.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameRecordingDateTime.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameRecordingDateTime.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameRecordingDateTime.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Frame/ID3FrameRecordingDayMonth.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameRecordingDayMonth.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameRecordingDayMonth.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameRecordingDayMonth.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Frame/ID3FrameRecordingHourMinute.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameRecordingHourMinute.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameRecordingHourMinute.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameRecordingHourMinute.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Frame/ID3FrameWithIntegerContent.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameWithIntegerContent.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameWithIntegerContent.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameWithIntegerContent.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Frame/ID3FrameWithLocalizedContent.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameWithLocalizedContent.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameWithLocalizedContent.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameWithLocalizedContent.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Frame/ID3FrameWithStringContent.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameWithStringContent.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameWithStringContent.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameWithStringContent.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Frame/ID3Genre.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3Genre.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3Genre.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3Genre.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Frame/ID3PictureFormat.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3PictureFormat.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3PictureFormat.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3PictureFormat.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Frame/ID3PictureType.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3PictureType.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3PictureType.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3PictureType.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/ID3TagEditor.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagEditor-e20b74056d21bb51402772a1352cab81.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagEditor-e20b74056d21bb51402772a1352cab81.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagEditor-e20b74056d21bb51402772a1352cab81.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/ID3TagEditorError.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagEditorError.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagEditorError.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagEditorError.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/ID3Version.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3Version.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3Version.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3Version.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Mp3/Mp3FileReader.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/Mp3FileReader.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/Mp3FileReader.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/Mp3FileReader.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Mp3/Mp3FileReaderFactory.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/Mp3FileReaderFactory.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/Mp3FileReaderFactory.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/Mp3FileReaderFactory.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Mp3/Mp3FileWriter.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/Mp3FileWriter.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/Mp3FileWriter.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/Mp3FileWriter.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Mp3/Mp3WithID3TagBuilder.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/Mp3WithID3TagBuilder.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/Mp3WithID3TagBuilder.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/Mp3WithID3TagBuilder.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/FrameContentParser.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameContentParser.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameContentParser.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameContentParser.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/FrameContentParsingOperation.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameContentParsingOperation.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameContentParsingOperation.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameContentParsingOperation.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/FrameContentSizeParser.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameContentSizeParser.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameContentSizeParser.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameContentSizeParser.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/FrameSizeParser.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameSizeParser.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameSizeParser.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/FrameSizeParser.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3AttachedPictureFrameContentParsingOperation.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3AttachedPictureFrameContentParsingOperation.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3AttachedPictureFrameContentParsingOperation.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3AttachedPictureFrameContentParsingOperation.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3AttachedPictureFrameContentParsingOperationFactory.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3AttachedPictureFrameContentParsingOperationFactory.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3AttachedPictureFrameContentParsingOperationFactory.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3AttachedPictureFrameContentParsingOperationFactory.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3CoupleOfNumbersAdapter.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3CoupleOfNumbersAdapter.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3CoupleOfNumbersAdapter.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3CoupleOfNumbersAdapter.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3DiscPositionFrameContentParsingOperationFactory.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3DiscPositionFrameContentParsingOperationFactory.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3DiscPositionFrameContentParsingOperationFactory.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3DiscPositionFrameContentParsingOperationFactory.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3FrameContentParsingOperationFactory.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameContentParsingOperationFactory.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameContentParsingOperationFactory.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameContentParsingOperationFactory.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3FrameContentSizeParser.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameContentSizeParser.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameContentSizeParser.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameContentSizeParser.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3FrameParser.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameParser.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameParser.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameParser.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3FrameSizeParser.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameSizeParser.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameSizeParser.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameSizeParser.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3FrameStringContentParser.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameStringContentParser.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameStringContentParser.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameStringContentParser.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3FrameStringContentParserFactory.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameStringContentParserFactory.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameStringContentParserFactory.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameStringContentParserFactory.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3FrameStringContentParsingOperation.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameStringContentParsingOperation.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameStringContentParsingOperation.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameStringContentParsingOperation.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3FrameStringContentParsingOperationFactory.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameStringContentParsingOperationFactory.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameStringContentParsingOperationFactory.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameStringContentParsingOperationFactory.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3FrameStringEncodingDetector.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameStringEncodingDetector.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameStringEncodingDetector.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FrameStringEncodingDetector.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3FramesParser.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FramesParser.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FramesParser.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3FramesParser.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3GenreFrameContentParsingOperationFactory.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3GenreFrameContentParsingOperationFactory.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3GenreFrameContentParsingOperationFactory.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3GenreFrameContentParsingOperationFactory.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3GenreStringAdapter.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3GenreStringAdapter.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3GenreStringAdapter.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3GenreStringAdapter.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3LocalizedFrameContentParsingOperation.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3LocalizedFrameContentParsingOperation.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3LocalizedFrameContentParsingOperation.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3LocalizedFrameContentParsingOperation.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3LocalizedFrameContentParsingOperationFactory.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3LocalizedFrameContentParsingOperationFactory.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3LocalizedFrameContentParsingOperationFactory.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3LocalizedFrameContentParsingOperationFactory.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3ParsingOperationForID3FrameWithIntegerFactory.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3ParsingOperationForID3FrameWithIntegerFactory.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3ParsingOperationForID3FrameWithIntegerFactory.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3ParsingOperationForID3FrameWithIntegerFactory.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3ParsingOperationForID3FrameWithStringFactory.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3ParsingOperationForID3FrameWithStringFactory.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3ParsingOperationForID3FrameWithStringFactory.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3ParsingOperationForID3FrameWithStringFactory.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3PartOfTotalStringAdapter.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3PartOfTotalStringAdapter.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3PartOfTotalStringAdapter.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3PartOfTotalStringAdapter.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3PictureTypeAdapter.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3PictureTypeAdapter.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3PictureTypeAdapter.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3PictureTypeAdapter.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3RecordingDayMonthContentParsingOperationFactory.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3RecordingDayMonthContentParsingOperationFactory.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3RecordingDayMonthContentParsingOperationFactory.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3RecordingDayMonthContentParsingOperationFactory.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3RecordingHourMinuteFrameContentParsingOperationFactory.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3RecordingHourMinuteFrameContentParsingOperationFactory.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3RecordingHourMinuteFrameContentParsingOperationFactory.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3RecordingHourMinuteFrameContentParsingOperationFactory.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3RecordingTimeFrameContentParsingOperation.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3RecordingTimeFrameContentParsingOperation.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3RecordingTimeFrameContentParsingOperation.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3RecordingTimeFrameContentParsingOperation.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3RecordingTimeFrameContentParsingOperationFactory.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3RecordingTimeFrameContentParsingOperationFactory.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3RecordingTimeFrameContentParsingOperationFactory.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3RecordingTimeFrameContentParsingOperationFactory.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3StringEncoding.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3StringEncoding.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3StringEncoding.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3StringEncoding.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3StringEncodingConverter.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3StringEncodingConverter.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3StringEncodingConverter.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3StringEncodingConverter.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3TagParser.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagParser.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagParser.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagParser.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3TagParserFactory.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagParserFactory.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagParserFactory.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagParserFactory.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3TagSizeParser.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagSizeParser.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagSizeParser.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagSizeParser.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3TagVersionParser.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagVersionParser.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagVersionParser.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagVersionParser.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/ID3TrackPositionFrameContentParsingOperationFactory.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TrackPositionFrameContentParsingOperationFactory.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TrackPositionFrameContentParsingOperationFactory.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TrackPositionFrameContentParsingOperationFactory.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/PartOfTotalStringAdapter.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/PartOfTotalStringAdapter.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/PartOfTotalStringAdapter.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/PartOfTotalStringAdapter.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/PictureTypeAdapter.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/PictureTypeAdapter.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/PictureTypeAdapter.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/PictureTypeAdapter.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/TagSizeParser.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/TagSizeParser.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/TagSizeParser.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/TagSizeParser.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Parse/TagVersionParser.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/TagVersionParser.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/TagVersionParser.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/TagVersionParser.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Tag/ID32v2TagBuilder.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID32v2TagBuilder.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID32v2TagBuilder.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID32v2TagBuilder.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Tag/ID32v3TagBuilder.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID32v3TagBuilder.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID32v3TagBuilder.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID32v3TagBuilder.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Tag/ID32v4TagBuilder.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID32v4TagBuilder.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID32v4TagBuilder.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID32v4TagBuilder.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Tag/ID3Tag.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3Tag.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3Tag.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3Tag.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Tag/ID3TagConfiguration.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagConfiguration.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagConfiguration.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagConfiguration.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Tag/ID3TagContentReader.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagContentReader.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagContentReader.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagContentReader.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Tag/ID3TagPresence.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagPresence.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagPresence.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagPresence.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Tag/ID3TagProperties.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagProperties.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagProperties.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagProperties.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Tag/ID3TagToStringAdapter.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagToStringAdapter.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagToStringAdapter.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/ID3TagToStringAdapter.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Tag/TagBuilder.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/TagBuilder.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/TagBuilder.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/TagBuilder.o"
+  },
+  "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/Source/Tag/TagPresence.swift" : {
+    "index-unit-output-path" : "/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/TagPresence.o",
+    "llvm-bc" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/TagPresence.bc",
+    "object" : "/Users/malachimcarthur/Library/Developer/Xcode/DerivedData/GorkTunes-bnpdldqxufpeabdusixxqegknzgs/SourcePackages/checkouts/ID3TagEditor/build/ID3TagEditor.build/Release-iphoneos/ID3TagEditor.build/Objects-normal/arm64/TagPresence.o"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "/Users/malachimcarthur/Desktop/GorkTunes/GorkTunes/Views/ContentView.swift" : {
+    "abi-baseline-json" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/GorkTunes.abi.json",
+    "const-values" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/GorkTunes-primary.swiftconstvalues",
+    "dependencies" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/GorkTunes-primary.d",
+    "diagnostics" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/GorkTunes-primary.dia",
+    "objc-header" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/GorkTunes-Swift.h",
+    "swiftdoc" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/GorkTunes.swiftdoc",
+    "swiftmodule" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/GorkTunes.swiftmodule",
+    "swiftsourceinfo" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/GorkTunes.swiftsourceinfo"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "" : {
+    "const-values" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/GorkTunes-primary.swiftconstvalues",
+    "dependencies" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/GorkTunes-primary.d",
+    "diagnostics" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/GorkTunes-primary.dia",
+    "emit-module-dependencies" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/GorkTunes-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/GorkTunes-primary-emit-module.dia",
+    "pch" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/GorkTunes-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/GorkTunes-primary.swiftdeps"
+  },
+  "/Users/malachimcarthur/Desktop/GorkTunes/GorkTunes/AudioPlayer.swift" : {
+    "index-unit-output-path" : "/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/AudioPlayer.o",
+    "llvm-bc" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/AudioPlayer.bc",
+    "object" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/AudioPlayer.o"
+  },
+  "/Users/malachimcarthur/Desktop/GorkTunes/GorkTunes/GorkTunesApp.swift" : {
+    "index-unit-output-path" : "/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/GorkTunesApp.o",
+    "llvm-bc" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/GorkTunesApp.bc",
+    "object" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/GorkTunesApp.o"
+  },
+  "/Users/malachimcarthur/Desktop/GorkTunes/GorkTunes/Music.swift" : {
+    "index-unit-output-path" : "/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/Music.o",
+    "llvm-bc" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/Music.bc",
+    "object" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/Music.o"
+  },
+  "/Users/malachimcarthur/Desktop/GorkTunes/GorkTunes/MusicLists.swift" : {
+    "index-unit-output-path" : "/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/MusicLists.o",
+    "llvm-bc" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/MusicLists.bc",
+    "object" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/MusicLists.o"
+  },
+  "/Users/malachimcarthur/Desktop/GorkTunes/GorkTunes/Playlist.swift" : {
+    "index-unit-output-path" : "/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/Playlist.o",
+    "llvm-bc" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/Playlist.bc",
+    "object" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/Playlist.o"
+  },
+  "/Users/malachimcarthur/Desktop/GorkTunes/GorkTunes/Util.swift" : {
+    "index-unit-output-path" : "/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/Util.o",
+    "llvm-bc" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/Util.bc",
+    "object" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/Util.o"
+  },
+  "/Users/malachimcarthur/Desktop/GorkTunes/GorkTunes/Views/ContentView.swift" : {
+    "index-unit-output-path" : "/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Users/malachimcarthur/Desktop/GorkTunes/GorkTunes/Views/EditPlaylistView.swift" : {
+    "index-unit-output-path" : "/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/EditPlaylistView.o",
+    "llvm-bc" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/EditPlaylistView.bc",
+    "object" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/EditPlaylistView.o"
+  },
+  "/Users/malachimcarthur/Desktop/GorkTunes/GorkTunes/Views/EditView.swift" : {
+    "index-unit-output-path" : "/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/EditView.o",
+    "llvm-bc" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/EditView.bc",
+    "object" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/EditView.o"
+  },
+  "/Users/malachimcarthur/Desktop/GorkTunes/GorkTunes/Views/FocusedPlaylistView.swift" : {
+    "index-unit-output-path" : "/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/FocusedPlaylistView.o",
+    "llvm-bc" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/FocusedPlaylistView.bc",
+    "object" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/FocusedPlaylistView.o"
+  },
+  "/Users/malachimcarthur/Desktop/GorkTunes/GorkTunes/Views/MenuView.swift" : {
+    "index-unit-output-path" : "/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/MenuView.o",
+    "llvm-bc" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/MenuView.bc",
+    "object" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/MenuView.o"
+  },
+  "/Users/malachimcarthur/Desktop/GorkTunes/GorkTunes/Views/PlaylistsView.swift" : {
+    "index-unit-output-path" : "/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/PlaylistsView.o",
+    "llvm-bc" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/PlaylistsView.bc",
+    "object" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/PlaylistsView.o"
+  },
+  "/Users/malachimcarthur/Desktop/GorkTunes/GorkTunes/Views/QueueView.swift" : {
+    "index-unit-output-path" : "/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/QueueView.o",
+    "llvm-bc" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/QueueView.bc",
+    "object" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/QueueView.o"
+  },
+  "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/malachimcarthur/Desktop/GorkTunes/build/GorkTunes.build/Release-iphoneos/GorkTunes.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  }
+}

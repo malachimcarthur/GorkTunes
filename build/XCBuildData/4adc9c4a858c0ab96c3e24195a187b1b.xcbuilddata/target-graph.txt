@@ -1,0 +1,6 @@
+Target dependency graph (3 targets)
+Target 'GorkTunes' in project 'GorkTunes'
+➜ Explicit dependency on target 'ID3TagEditor' in project 'ID3TagEditor'
+Target 'ID3TagEditor' in project 'ID3TagEditor'
+➜ Explicit dependency on target 'ID3TagEditor' in project 'ID3TagEditor'
+Target 'ID3TagEditor' in project 'ID3TagEditor' (no dependencies)
