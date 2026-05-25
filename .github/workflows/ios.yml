@@ -20,17 +20,6 @@ jobs:
       - name: Install Dependencies
         run: npm install # Replace with 'pod install' or 'flutter pub get' as needed
 
-      - name: Build and Archive
-        run: |
-          xcodebuild clean archive \
-            -workspace GorkTunes.xcodeproj/project.xcworkspace \
-            -scheme GorkTunes \
-            -archivePath build/YourApp.xcarchive \
-            -configuration Release \
-            CODE_SIGN_IDENTITY="" \
-            CODE_SIGNING_REQUIRED=NO \
-            CODE_SIGNING_ALLOWED=NO
-
       - name: Export IPA
         run: |
           xcodebuild -exportArchive \
