@@ -7,6 +7,8 @@
 import Foundation
 import AVFoundation
 import ID3TagEditor
+import UIKit
+import SwiftUI
 
 
 final class Music: Codable{
@@ -88,4 +90,5 @@ final class Music: Codable{
             print("Error while changing title \(error.localizedDescription)")
         }
     }
+    
 }

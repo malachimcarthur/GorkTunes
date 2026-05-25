@@ -12,6 +12,7 @@ struct EditView: View {
     @State private var title = ""
     @State private var artist = ""
     @State private var showExitAlert = false
+    @State private var isShowingSheet = false
     @StateObject private var musicLists = MusicLists()
     @Environment(\.dismiss) private var dismiss
     var body: some View {
@@ -38,6 +39,25 @@ struct EditView: View {
                         }
                         HStack{
                             TextField("Enter Artist", text: $artist).textFieldStyle(.roundedBorder)
+                        }
+                    }
+                    VStack{
+                        HStack{
+                            Text("Export MP3").opacity(0.6).font(.subheadline)
+                            Spacer()
+                        }
+                        HStack{
+                            Button(action: {
+                                let activityViewController = UIActivityViewController(activityItems: [music.URL], applicationActivities: nil)
+                                if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+                                   let rootVC = windowScene.windows.first?.rootViewController{
+                                    rootVC.present(activityViewController, animated: true, completion: nil)
+                                }
+                            },
+                            label: {
+                                Label("Export",systemImage:"plus.circle.fill")}
+                            )
+                            Spacer()
                         }
                         Spacer()
                     }
