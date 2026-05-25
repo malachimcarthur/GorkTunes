@@ -13,7 +13,5 @@ jobs:
 
     steps:
       - uses: swift-actions/setup-swift@65540b95f51493d65f5e59e97dcef9629ddf11bf
-        with:
-          swift-version: "5.3.5"
       - name: Get swift version
         run: swift --version # Swift 6.3
