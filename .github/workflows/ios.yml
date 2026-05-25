@@ -23,7 +23,7 @@ jobs:
       - name: Build and Archive
         run: |
           xcodebuild clean archive \
-            -workspace project.xcworkspace \
+            -workspace GorkTunes.xcodeproj/project.xcworkspace \
             -scheme YourScheme \
             -archivePath build/YourApp.xcarchive \
             -configuration Release \
