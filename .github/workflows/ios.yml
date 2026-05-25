@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-and-export:
-    runs-on: macos-17 # macOS is required to run Xcode
+    runs-on: macos-15 # macOS is required to run Xcode
 
     steps:
       - name: Checkout Repository
