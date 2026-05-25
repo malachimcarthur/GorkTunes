@@ -24,7 +24,7 @@ jobs:
         run: |
           xcodebuild clean archive \
             -workspace GorkTunes.xcodeproj/project.xcworkspace \
-            -scheme YourScheme \
+            -scheme GorkTunes \
             -archivePath build/YourApp.xcarchive \
             -configuration Release \
             CODE_SIGN_IDENTITY="" \
