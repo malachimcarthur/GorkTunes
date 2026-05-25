@@ -1,17 +1,54 @@
-name: iOS starter workflow
+name: Build & Export iOS IPA
 
 on:
   push:
     branches: ["main"]
-  pull_request:
-    branches: ["main"]
 
 jobs:
-  build:
-    name: Build and Test default scheme using any available iPhone simulator
-    runs-on: macos-latest
+  build-and-export:
+    runs-on: macos-latest # macOS is required to run Xcode
 
     steps:
-      - uses: swift-actions/setup-swift@65540b95f51493d65f5e59e97dcef9629ddf11bf
-      - name: Get swift version
-        run: swift --version # Swift 6.3
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js (if using React Native/Expo/Ionic)
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Dependencies
+        run: npm install # Replace with 'pod install' or 'flutter pub get' as needed
+
+      - name: Build and Archive
+        run: |
+          xcodebuild clean archive \
+            -workspace project.xcworkspace \
+            -scheme YourScheme \
+            -archivePath build/YourApp.xcarchive \
+            -configuration Release \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Export IPA
+        run: |
+          xcodebuild -exportArchive \
+            -archivePath build/YourApp.xcarchive \
+            -exportPath build/ios/ipa \
+            -exportOptionsPlist ExportOptions.plist \
+            -allowProvisioningUpdates
+
+      - name: Save IPA to Repository
+        uses: actions/upload-artifact@v4
+        with:
+          name: exported-ipa
+          path: build/ios/ipa/GorkTunes.ipa
+
+      - name: Commit IPA to Repo
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: GitHub Actions
+          author_email: actions@github.com
+          message: "Upload exported iOS IPA"
+          add: "build/ios/ipa/GorkTunes.ipa"
