@@ -9,10 +9,8 @@ on:
 jobs:
   build:
     name: Build and Test default scheme using any available iPhone simulator
-    strategy:
-      matrix:
-        os: macos-latest
-        swift: "6.3"
+    runs-on: ios-latest
+
     steps:
       - uses: swift-actions/setup-swift@65540b95f51493d65f5e59e97dcef9629ddf11bf
         with:
