@@ -49,6 +49,16 @@ struct ContentView: View {
                 }
                 HStack{
                     VStack{
+                        Button(
+                            action:{musicLists.musicQueue = musicLists.fullMusicList.shuffled()},
+                            label: {Label("Add all to queue",systemImage:"plus.circle.fill")}
+                        )
+                        Button(
+                            action: {
+                                Task{await UIPasteboard.general.string = Utils.getClipboardString()}
+                            },
+                            label: {Text("Copy Song list to clipboard", systemImage: "doc.on.doc.fill")}
+                        )
                         ScrollView{
                             ForEach(musicLists.fullMusicList, id: \.id) { music in
                                 HStack
@@ -79,16 +89,7 @@ struct ContentView: View {
                                     }label: {Label ( "", systemImage: "ellipsis.circle")}.font(.title)
                                 }.background(Color.gray.mix(with: Color.black, by: 0.6))
                             }
-                        Button(
-                            action:{musicLists.musicQueue = musicLists.fullMusicList.shuffled()},
-                            label: {Label("Add all to queue",systemImage:"plus.circle")}
-                        )
-                        Button(
-                            action: {
-                                Task{await UIPasteboard.general.string = Utils.getClipboardString()}
-                            },
-                            label: {Text("Copy Song list to clipboard")}
-                        )
+                        
                         }
                     }
                 }
