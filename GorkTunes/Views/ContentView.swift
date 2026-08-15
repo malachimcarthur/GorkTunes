@@ -57,7 +57,7 @@ struct ContentView: View {
                             action: {
                                 Task{await UIPasteboard.general.string = Utils.getClipboardString()}
                             },
-                            label: {Text("Copy Song list to clipboard", systemImage: "doc.on.doc.fill")}
+                            label: {Label("Copy Song list to clipboard", systemImage:"doc.on.doc.fill")}
                         )
                         ScrollView{
                             ForEach(musicLists.fullMusicList, id: \.id) { music in

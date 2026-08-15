@@ -1,1 +1,0 @@
-../../InstallationBuildProductsLocation/Applications/GorkTunes.app
